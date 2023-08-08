@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FilmsAPI</name>
+    </assembly>
+    <members>
+        <member name="M:FilmsAPI.Controllers.FilmController.AddFilm(FilmsAPI.DTOS.CreateFilmDTO)">
+            <summary>
+            Adiciona um filme ao banco de dados
+            </summary>
+            <param name="filmDto">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:FilmsAPI.Controllers.FilmController.ReadFilms(System.Int32,System.Int32)" -->
+        <member name="M:FilmsAPI.Controllers.FilmController.FindById(System.Int32)">
+            <summary>
+            Lê os filmes do banco de dados a partir do Id
+            </summary>
+            <param name="id">Parametros necessários o retorno do filme pelo Id</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso o filme seja encontrado</response>
+        </member>
+        <member name="M:FilmsAPI.Controllers.FilmController.UpdateFilm(System.Int32,FilmsAPI.DTOS.UpdateFilmDto)">
+            <summary>
+            Atualiza o filme completo pelo Id
+            </summary>
+            <param name="id">Parametros necessários a atualização do filme pelo Id</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso o filme seja atualizado com sucesso</response>
+        </member>
+        <member name="M:FilmsAPI.Controllers.FilmController.UpdateFilmPatch(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmsAPI.DTOS.UpdateFilmDto})">
+            <summary>
+            Atualiza o filme parcialmente pelo Id
+            </summary>
+            <param name="id">Parametros necessários a atualização do filme pelo Id</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso o filme seja atualizado com sucesso</response>
+        </member>
+        <member name="M:FilmsAPI.Controllers.FilmController.DeleteFilm(System.Int32)">
+            <summary>
+            Deleta o filme pelo Id
+            </summary>
+            <param name="id">Parametros necessários a exclusão do filme pelo Id</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso o filme seja excluído com sucesso</response>
+        </member>
+        <member name="T:FilmsAPI.Migrations.NomeDaMigracao">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmsAPI.Migrations.NomeDaMigracao.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmsAPI.Migrations.NomeDaMigracao.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmsAPI.Migrations.NomeDaMigracao.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
